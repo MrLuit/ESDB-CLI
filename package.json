@@ -2,15 +2,18 @@
   "name": "esdb-cli",
   "version": "1.0.0",
   "description": "CLI to add entries to EtherScamDB (https://etherscamdb.info) dataset",
-  "main": "app.js",
+  "main": "index.js",
   "author": "Luit",
   "license": "MIT",
+  "bin": {
+    "esdb": "./cli.js"
+  },
   "dependencies": {
-    "fs-extra": "^7.0.0",
     "js-yaml": "^3.12.0",
     "octonode": "^0.9.3",
     "open": "0.0.5",
-    "prompt": "^1.0.0"
+    "prompt": "^1.0.0",
+    "sha1-regex": "^1.0.0"
   },
   "repository": {
     "type": "git",
