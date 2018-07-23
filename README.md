@@ -2,18 +2,30 @@
 
 Use this tool to create pull requests for new blacklist entries on [EtherScamDB](https://github.com/MrLuit/EtherScamDB).
 
-## Usage
+## CLI Usage
 
-> git clone https://github.com/MrLuit/ESDB-CLI.git
+> npm install esdb-cli -g
 
-> cd ESDB-CLI
+(Create a new github access token at https://github.com/settings/tokens)
 
-> npm install
+> esdb --token=<token>
 
-> node app
+> esdb
 
-(You will now be asked to update config.js with your personal github access token which you can find [here](https://github.com/settings/tokens).
+That's it :tada:
 
-> node app
+## API
 
-(Done)
+You can also add new entries through an API:
+
+> npm install esdb-cli --save
+
+```
+const esdb = require('esdb-cli');
+
+(async () => {
+	await esdb(access_token, entry_object);
+})();
+```
+
+(esdb returns a Promise, so either use async + await or `.then()`)

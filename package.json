@@ -1,6 +1,6 @@
 {
   "name": "esdb-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI to add entries to EtherScamDB (https://etherscamdb.info) dataset",
   "main": "index.js",
   "author": "Luit",
