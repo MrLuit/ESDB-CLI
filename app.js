@@ -27,7 +27,7 @@ const {parse} = require('url');
 	
 	await content.update(config.github.path,'Added ' + entry.name,safeDump(yaml.concat(entry),config.yaml));
 	
-	/*const pr = await github.pr(config.github.repo,{
+	const pr = await github.pr(config.github.repo,{
 		title: "Added " + entry.name,
 		body: "Added " + entry.name,
 		head: fork.getOwner() + ":" + fork.getBranch(),
@@ -35,5 +35,5 @@ const {parse} = require('url');
 	});
 	
 	open(pr.html_url);
-	console.log('Success!');*/
+	console.log('Success!');
 })();
